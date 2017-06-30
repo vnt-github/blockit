@@ -202,3 +202,4 @@ def make_text(text,color,bgcolor,top,left,size=50):
     
     
     return (img,text_rect)
+
