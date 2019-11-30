@@ -54,7 +54,7 @@ def help_main():
             set_bgs(DISPLAYSURF)
             DISPLAYSURF.blit(help_image,(0,0))
         except Exception as error:
-            print str(error)
+            print(str(error))
             return
         for event in pygame.event.get():
             if event.type==QUIT:

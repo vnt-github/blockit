@@ -164,7 +164,7 @@ def play_button_sound():
 def read_high_score():
     fin=open('score.txt','r')
     for line in fin:
-        print "score is :"+line
+        print("score is :"+line)
     fin.close()
 def write_high_score(score):
     fin=open('score.txt','r')

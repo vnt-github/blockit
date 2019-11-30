@@ -50,7 +50,7 @@ undo_rect=undo_image_up.get_rect()
 undo_rect.bottomleft=20,WINDOW_HEIGHT-20
 
 turn_image=pygame.image.load("images/turn.png")
-turn_image=pygame.transform.scale(turn_image,(2*BUTTON_WIDTH/5,BUTTON_WIDTH/2))
+turn_image=pygame.transform.scale(turn_image,(int(2*BUTTON_WIDTH/5),int(BUTTON_WIDTH/2)))
 turn_rect=turn_image.get_rect()
 turn_rect.top=10
 
@@ -150,37 +150,37 @@ def display_start():
     BOARD_Y_PLACE=WINDOW_HEIGHT-(r_c*BLOCK_SIZE)-(WINDOW_HEIGHT-r_c*BLOCK_SIZE)/2+8
     #
     player2_0=pygame.image.load("images/player2_0.png")
-    player2_0=pygame.transform.scale(player2_0,(BLOCK_SIZE-5*BLOCK_WIDTH,BLOCK_SIZE/2-5*BLOCK_WIDTH/2))
+    player2_0=pygame.transform.scale(player2_0,(int(BLOCK_SIZE-5*BLOCK_WIDTH),int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2)))
     player2_0_rect=player2_0.get_rect()
     player2_1=pygame.image.load("images/player2_1.png")
-    player2_1=pygame.transform.scale(player2_1,(BLOCK_SIZE/2-5*BLOCK_WIDTH/2,BLOCK_SIZE-5*BLOCK_WIDTH))
+    player2_1=pygame.transform.scale(player2_1,(int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2),int(BLOCK_SIZE-5*BLOCK_WIDTH)))
     player2_1_rect=player2_1.get_rect()
     player2_2=pygame.image.load("images/player2_2.png")
-    player2_2=pygame.transform.scale(player2_2,(BLOCK_SIZE-5*BLOCK_WIDTH,BLOCK_SIZE/2-5*BLOCK_WIDTH/2))
+    player2_2=pygame.transform.scale(player2_2,(int(BLOCK_SIZE-5*BLOCK_WIDTH),int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2)))
     player2_2_rect=player2_2.get_rect()
     player2_3=pygame.image.load("images/player2_3.png")
-    player2_3=pygame.transform.scale(player2_3,(BLOCK_SIZE/2-5*BLOCK_WIDTH/2,BLOCK_SIZE-5*BLOCK_WIDTH))
+    player2_3=pygame.transform.scale(player2_3,(int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2),int(BLOCK_SIZE-5*BLOCK_WIDTH)))
     player2_3_rect=player2_3.get_rect()
     
     player1_0=pygame.image.load("images/player1_0.png")
-    player1_0=pygame.transform.scale(player1_0,(BLOCK_SIZE-5*BLOCK_WIDTH,BLOCK_SIZE/2-5*BLOCK_WIDTH/2))
+    player1_0=pygame.transform.scale(player1_0,(int(BLOCK_SIZE-5*BLOCK_WIDTH),int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2)))
     player1_0_rect=player1_0.get_rect()
     player1_1=pygame.image.load("images/player1_1.png")
-    player1_1=pygame.transform.scale(player1_1,(BLOCK_SIZE/2-5*BLOCK_WIDTH/2,BLOCK_SIZE-5*BLOCK_WIDTH))
+    player1_1=pygame.transform.scale(player1_1,(int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2),int(BLOCK_SIZE-5*BLOCK_WIDTH)))
     player1_1_rect=player1_1.get_rect()
     player1_2=pygame.image.load("images/player1_2.png")
-    player1_2=pygame.transform.scale(player1_2,(BLOCK_SIZE-5*BLOCK_WIDTH,BLOCK_SIZE/2-5*BLOCK_WIDTH/2))
+    player1_2=pygame.transform.scale(player1_2,(int(BLOCK_SIZE-5*BLOCK_WIDTH),int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2)))
     player1_2_rect=player1_2.get_rect()
     player1_3=pygame.image.load("images/player1_3.png")
-    player1_3=pygame.transform.scale(player1_3,(BLOCK_SIZE/2-5*BLOCK_WIDTH/2,BLOCK_SIZE-5*BLOCK_WIDTH))
+    player1_3=pygame.transform.scale(player1_3,(int(BLOCK_SIZE/2-5*BLOCK_WIDTH/2),int(BLOCK_SIZE-5*BLOCK_WIDTH)))
     player1_3_rect=player1_3.get_rect()
     
     player2_=pygame.image.load("images/player2_.png");
-    player2_=pygame.transform.scale(player2_,(BLOCK_SIZE,BLOCK_SIZE));
+    player2_=pygame.transform.scale(player2_,(int(BLOCK_SIZE),int(BLOCK_SIZE)));
     player2__rect=player2_.get_rect();
 
     player1_=pygame.image.load("images/player1_.png");
-    player1_=pygame.transform.scale(player1_,(BLOCK_SIZE,BLOCK_SIZE));
+    player1_=pygame.transform.scale(player1_,(int(BLOCK_SIZE),int(BLOCK_SIZE)));
     player1__rect=player1_.get_rect();
     
     #
